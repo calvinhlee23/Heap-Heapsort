@@ -47,7 +47,6 @@ class BinaryMinHeap
 
   def self.heapify_down(array, parent_idx, len = array.length, &prc)
     child_indices = BinaryMinHeap.child_indices(len, parent_idx);
-
     return array if child_indices == nil
 
     if child_indices[1]
